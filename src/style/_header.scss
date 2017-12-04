@@ -1,0 +1,62 @@
+.page-header {
+  background: rgba(0,0,0,0.3) url(http://freefrontend.com/assets/img/css-background-patterns/css3-gradient-pattern.png);
+  height: 180px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0;
+  margin: 0;
+  border: none;
+  position: relative;
+  &:after {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: $brand-primary;
+    opacity: 0.9;
+  }
+  &-wrapper {
+    position: relative;
+    z-index: 1;
+    .brand {
+      font-size: 40px;
+      text-transform: uppercase;
+      font-weight: bold;
+      color: #FFFFFF;
+      line-height: 1;
+      display: block;
+      margin-top: 8px;
+    }
+    .search-box {
+      background: #ffffff;
+      height: 48px;
+      border-radius: 36px;
+      border: none;
+      display: flex;
+      align-items: center;
+      padding: 0 5px;
+      select, input {
+        border: none;
+        outline: none;
+        font-weight: 400;
+        , &::-webkit-input-placeholder {
+          color: #9f9f9f;
+        }
+      }
+      select {
+        background: transparent;
+        width: 130px;
+        margin-right: 8px;
+      }
+      input {
+        width: 360px;
+        background: transparent;
+        margin-right: 8px;
+        height: 36px;
+      }
+    }
+  }
+}

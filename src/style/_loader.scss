@@ -1,0 +1,30 @@
+.loading {
+  color: transparent;
+  position: relative;
+  &:after {
+    content: "";
+    margin-top: -8px;
+    margin-left: -8px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    border: 2px solid #ffffff;
+    border-top-color: rgba(0, 0, 0, 0) !important;
+    border-left-color: rgba(0, 0, 0, 0) !important;
+    width: 16px;
+    background: none !important;
+    height: 16px;
+    border-radius: 50%;
+    animation: loadingSpinner 1s infinite linear;
+    -webkit-animation: loadingSpinner 1s infinite linear;
+  }
+}
+
+@keyframes loadingSpinner {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
