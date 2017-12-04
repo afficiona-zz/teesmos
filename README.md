@@ -3,6 +3,8 @@ Teesmos - Online Mens Apparel Store
 
 > An online eCommerce store built on React
 
+Open http://teesmos.afficiona.com
+
 ## Installation and run
 You need node.js and npm to run the project locally.
 
